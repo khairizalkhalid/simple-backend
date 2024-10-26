@@ -1,0 +1,31 @@
+{
+  "name": "batching-backend",
+  "version": "1.0.0",
+  "description": "backend for batching electron app",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev node src/index.js",
+    "build": "webpack --mode production"
+  },
+  "author": "impulse",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "node-machine-id": "^1.1.12",
+    "pino": "^9.3.2",
+    "pino-pretty": "^11.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
